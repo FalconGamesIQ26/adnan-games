@@ -2,39 +2,82 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>ألعاب عدنان - الصفحة الرئيسية</title>
+    <title>ألعاب عدنان - مركز التحميل</title>
     <style>
         body {
             background-color: #f4f4f9;
             font-family: Tahoma, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 30px;
+            margin: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
         }
         h1 {
-            color: #333;
+            margin: 0;
+            font-size: 28px;
         }
-        p {
+        p.desc {
+            color: #ecf0f1;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .game-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: right;
+        }
+        .game-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .game-card p {
             color: #666;
-            font-size: 18px;
+            font-size: 14px;
         }
-        .btn {
-            display: inline-block;
-            background-color: #ff4757;
+        .btn-download {
+            display: block;
+            background-color: #27ae60;
             color: white;
-            padding: 10px 20px;
-            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            margin-top: 15px;
+        }
+        .btn-download:hover {
+            background-color: #219653;
         }
     </style>
 </head>
 <body>
 
-    <h1>🎮 أهلاً بك في موقع ألعاب عدنان</h1>
-    <p>مرحباً بك في عالمي الخاص.. حيث أشارك شغفي وأفكاري مع الجميع 💖</p>
-    
-    <a href="#" class="btn">اضغط هنا للعب الآن</a>
+    <header>
+        <h1>🎮 أهلاً بك في موقع ألعاب عدنان</h1>
+        <p class="desc">مرحباً بك في عالمي الخاص.. حمل ألعابي الخاصة واستمتع بها مجاناً! 💖</p>
+    </header>
+
+    <div class="game-card">
+        <h3>لعبتي الأولى (اكتب اسم اللعبة هنا)</h3>
+        <p>هنا يمكنك كتابة وصف قصير عن اللعبة الخاصة بك وما تدور حوله.</p>
+        <a href="game1.zip" class="btn-download" download>📥 تحميل اللعبة الآن</a>
+    </div>
+
+    <div class="game-card">
+        <h3>لعبتي الثانية (اكتب اسم اللعبة هنا)</h3>
+        <p>وصف مختصر للعبة الثانية الخاصة بك.</p>
+        <a href="game2.zip" class="btn-download" download>📥 تحميل اللعبة الآن</a>
+    </div>
 
 </body>
 </html>
